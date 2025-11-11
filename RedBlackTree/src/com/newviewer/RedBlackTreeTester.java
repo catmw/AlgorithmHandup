@@ -24,22 +24,24 @@ public class RedBlackTreeTester {
 	    myTree.insert(4);
 		myTree.insert(5);
 
-		//Test2 
-		System.out.println("In-order Traversal after inserting 1, 2, 3, 12, 7, 4, 5:");
+		//Test2 Print preorder traversal
+		System.out.println("Pre-order Traversal after inserting 1, 2, 3, 12, 7, 4, 5:");
 		myTree.preOrderTraversal();
 		System.out.println();
 
-		//Test3
+		//Test3 Count node count
 		System.out.println("Node count should be 7 == " + myTree.countNodes());
 
-		//Test4
+		//Test4 Check min value
         System.out.println("Min should be 1 == " + myTree.findMinimum());
 
-		//Test5
+		//Test5 Check max value
         System.out.println("Max should be 12 == " + myTree.findMaximum());
 
-		//Test6
+		//Test6 Print root value
 		System.out.println("root: " + myTree.root.value);
+
+
 	}
 
 }

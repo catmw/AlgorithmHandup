@@ -49,6 +49,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 
 	void handleRedBlack(Node newNode)
 {
+	// If node is root color it black
     if (newNode == root) {
         newNode.nodeColourRed = false;
         return;
@@ -74,7 +75,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 	//Find the uncle node
     Node uncle = (grandParent.left == parent) ? grandParent.right : grandParent.left;
 
-
+	//Case when uncle is red
     if (uncle != null && uncle.nodeColourRed) {
         parent.nodeColourRed = false;
         uncle.nodeColourRed  = false;
